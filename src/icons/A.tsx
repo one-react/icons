@@ -1,8 +1,8 @@
 // Generated from src/assets/a.svg
 import React, { PureComponent, SVGProps } from 'react'
 interface Props extends SVGProps<SVGSVGElement> {
-  size?: string | number;
-  fill?: string;
+  size?: string | number
+  fill?: string
 }
 
 const style = {
@@ -16,7 +16,6 @@ export class SvgA extends PureComponent<Props, {}> {
     const { size, fill } = props
     return (
       <svg
-        {...props}
         preserveAspectRatio="xMidYMid meet"
         fontSize={size || 32}
         fill={fill || 'currentColor'}
@@ -24,6 +23,7 @@ export class SvgA extends PureComponent<Props, {}> {
         viewBox="0 0 48 1"
         width="1em"
         height="1em"
+        {...props}
       >
         <path d="M0 0h48v1H0z" fill="#063855" fillRule="evenodd" />
       </svg>

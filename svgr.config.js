@@ -30,7 +30,6 @@ module.exports = {
   ext: 'tsx',
   outDir: 'src/icons',
   template,
-  expandProps: 'start',
   svgProps: {
     preserveAspectRatio: `xMidYMid meet`,
     fontSize: `{size || 32}`,

@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "or-icons": [
+        "../src"
+      ]
+    }
+  },
+  "include": [
+    "stories",
+    "types",
+    "../src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

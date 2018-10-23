@@ -1,24 +1,91 @@
 {
-  "name": "icons",
-  "version": "1.0.0",
+  "name": "or-icons",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "react": "^16.5.2"
-  },
-  "devDependencies": {
-    "@svgr/cli": "^3.1.0",
-    "@types/react": "^16.4.18"
-  },
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "sideEffects": true,
   "scripts": {
+    "test": "NODE_ENV=test jest -c jest.config.js --bail --coverage",
+    "clean": "rimraf lib es",
+    "type-check": "tsc --noEmit",
+    "build": "npm run clean && npm run build:js && npm run build:es",
+    "build:js": "npm run build:js:types && babel src --out-dir lib --extensions '.ts,.tsx'",
+    "build:js:types": "tsc --emitDeclarationOnly",
+    "build:es": "npm run build:es:types && NODE_ENV=es babel src --out-dir es --extensions '.ts,.tsx'",
+    "build:es:types": "tsc --emitDeclarationOnly --declarationDir es",
+    "watch": "babel src --watch --out-dir lib",
+    "lint": "tslint src/**/*.ts{,x} examples/stories/**/*.ts{,x}",
+    "semantic-release": "semantic-release",
+    "coverage": "codecov",
     "getIndex": "node getIndex.js",
-    "build": "svgr src/assets --ext tsx --out-dir src/icons --config-file svgr.config.js"
+    "convert": "svgr src/assets --ext tsx --out-dir src/icons --config-file svgr.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@or-github.com:one-react/icons.git"
+    "url": "https://github.com/one-react/icons.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "foryuki <foryuki@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/one-react/icons/issues"
+  },
+  "homepage": "https://github.com/one-react/icons#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@commitlint/cli": "^7.1.2",
+    "@commitlint/config-angular": "^7.1.2",
+    "@svgr/cli": "^3.1.0",
+    "@types/enzyme": "^3.1.14",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "@types/jest": "^23.3.2",
+    "@types/react": "^16.4.14",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "codecov": "^3.1.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "husky": "^1.0.0-rc.14",
+    "jest": "^23.6.0",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2",
+    "raf": "^3.4.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "regenerator-runtime": "^0.12.1",
+    "rimraf": "^2.6.2",
+    "semantic-release": "^15.9.15",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.1.2",
+    "classnames": "^2.2.6",
+    "or-theme": "^1.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=15.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run type-check && lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "tslint --fix",
+      "git add"
+    ]
+  }
 }
