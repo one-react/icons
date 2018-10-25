@@ -1,24 +1,23 @@
-import { action } from '@storybook/addon-actions'
-import Sample from 'or-icons'
+import * as Icons from 'or-icons'
 import React, { PureComponent } from 'react'
 
-const handleClick = action('sample-click')
+import './styles.scss'
 
 export default class Example extends PureComponent<{}, {}> {
   render() {
     return (
-      <div>
-        <h1>button type:</h1>
-        <div>
-          <Sample type="primary" onClick={handleClick}>
-            ADD TO CART
-          </Sample>
-          <Sample onClick={handleClick}>SIGN UP</Sample>
-          <Sample type="warning" onClick={handleClick}>
-            DELETE
-          </Sample>
-          <Sample onClick={handleClick}>TOO LOOOOOOOOOOOOOOOOOOG</Sample>
-        </div>
+      <div className="icon-example">
+        {Object.keys(Icons)
+          .filter(n => n !== 'default')
+          .map(componentName => {
+            const component = Icons[componentName]
+            return (
+              <div className="icon-item">
+                {React.createElement(component)}
+                <div className="icon-label">{component.name}</div>
+              </div>
+            )
+          })}
       </div>
     )
   }

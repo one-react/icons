@@ -1,21 +1,15 @@
-import { action } from '@storybook/addon-actions'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Sample from 'or-icons'
-import { previewCode } from './util'
-
+import { SvgClose } from 'or-icons'
 import Example from './example'
 
-import './styles.scss'
-
-const handleClick = action('basic-click')
-storiesOf('or-sample', module)
+storiesOf('or-icons', module)
+  .add('all icons', () => <Example />)
   .addDecorator(
     withInfo({
       inline: true,
-      propTables: [Sample],
       propTablesExclude: [Example],
       styles: {
         jsxInfoContent: {
@@ -25,10 +19,9 @@ storiesOf('or-sample', module)
       }
     })
   )
-  .add('basic', () => <Sample onClick={handleClick}>Test</Sample>)
-  .add('sample', () => <Example />, {
+
+  .add('sigle icon', () => <SvgClose size="25" fill="#555" />, {
     info: {
-      source: false,
-      text: previewCode(require('!!raw-loader!./example.tsx'))
+      source: true
     }
   })

@@ -14,9 +14,6 @@ module.exports = (baseConfig, env, defaultConfig) => {
       },
       require.resolve('react-docgen-typescript-loader')
     ]
-  }, {
-    test: /\.scss$/,
-    use: ['style-loader', 'css-loader', 'sass-loader']
   })
 
   defaultConfig.resolve.alias['or-icons'] = path.resolve(__dirname, '../../src')
