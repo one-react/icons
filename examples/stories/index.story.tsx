@@ -1,9 +1,10 @@
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
+import { previewCode } from './util'
 
-import { SvgClose } from 'or-icons'
 import Example from './example'
+import SingleExample from './singleExample'
 
 storiesOf('or-icons', module)
   .add('all icons', () => <Example />)
@@ -20,8 +21,9 @@ storiesOf('or-icons', module)
     })
   )
 
-  .add('sigle icon', () => <SvgClose size="25" fill="#555" />, {
+  .add('sigle icon', () => <SingleExample />, {
     info: {
-      source: true
+      source: false,
+      text: previewCode(require('!!raw-loader!./singleExample.tsx'))
     }
   })

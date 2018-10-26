@@ -9,7 +9,8 @@ interface Props extends SVGProps<SVGSVGElement> {
 
 const style = {
   display: 'block',
-  flex: '0 0 auto'
+  flex: '0 0 auto',
+  cursor: 'pointer'
 }
 
 export class ${state.componentName} extends PureComponent<Props, {}> {
