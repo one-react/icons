@@ -1,0 +1,39 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - '10'
+  - '9'
+  - '8'
+before_script:
+  - PATH=${PATH//:\.\/node_modules\/\.bin/}
+after_success:
+  - npm run convert
+  - npm run getIndex
+  - npm run build
+  - npm run coverage
+  - npm install -g travis-deploy-once
+  - travis-deploy-once "npm run semantic-release"
+branches:
+  only:
+    - master
+    - dev
+    - /^greenkeeper/.*$/
+before_deploy:
+  - cd examples
+  - npm install
+  - npm run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: false
+  local-dir: examples/site
+  on:
+    branch: master
+    node: '10'
