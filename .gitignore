@@ -60,6 +60,8 @@ typings/
 # bundle dir
 lib
 es
+# storybook examples outputs
+.site
 
 package-lock.json
 

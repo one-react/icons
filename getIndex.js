@@ -1,6 +1,7 @@
 const { promisify } = require('util')
 const fs = require('fs')
 const path = require('path')
+const prettier = require('prettier')
 
 const readdirAsync = promisify(fs.readdir)
 const writeFileAsync = promisify(fs.writeFile)
@@ -22,7 +23,14 @@ async function readConfig() {
 
 async function boot() {
   const config = await readConfig()
-  await writeFileAsync(targetFile, config.join('\n'), 'utf-8')
+  const text = config.join('\n')
+  // read prettier options from local config `.prettierrc`
+  const options = await prettier.resolveConfig(path.resolve(__dirname, '.prettierrc'))
+  const formatted = prettier.format(text, {
+    ...options,
+    parser: 'babylon'
+  })
+  await writeFileAsync(targetFile, formatted, 'utf-8')
   console.log('export svg content -->', config)
 }
 

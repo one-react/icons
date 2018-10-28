@@ -12,9 +12,8 @@ node_js:
   - '8'
 before_script:
   - PATH=${PATH//:\.\/node_modules\/\.bin/}
+  - npm run getIcons
 after_success:
-  - npm run convert
-  - npm run getIndex
   - npm run build
   - npm run coverage
   - npm install -g travis-deploy-once
