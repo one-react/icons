@@ -12,7 +12,7 @@ export default class Example extends PureComponent<{}, {}> {
           .map(componentName => {
             const component = Icons[componentName]
             return (
-              <div className="icon-item">
+              <div className="icon-item" key={componentName}>
                 {React.createElement(component)}
                 <div className="icon-label">{component.name}</div>
               </div>

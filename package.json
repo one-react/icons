@@ -18,7 +18,8 @@
     "semantic-release": "semantic-release",
     "coverage": "codecov",
     "getIndex": "node getIndex.js",
-    "convert": "svgr src/assets --ext tsx --out-dir src/icons --config-file svgr.config.js"
+    "convert": "svgr src/assets --ext tsx --out-dir src/icons --config-file svgr.config.js",
+    "getIcons": "npm run convert && npm run getIndex"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
     "@babel/preset-typescript": "^7.1.0",
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-angular": "^7.1.2",
+    "@semantic-release/git": "^7.0.5",
     "@svgr/cli": "^3.1.0",
     "@types/enzyme": "^3.1.14",
     "@types/enzyme-adapter-react-16": "^1.0.3",
@@ -61,7 +63,7 @@
     "react-dom": "^16.1.1",
     "regenerator-runtime": "^0.12.1",
     "rimraf": "^2.6.2",
-    "semantic-release": "^15.9.15",
+    "semantic-release": "^15.10.6",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-config-standard": "^8.0.1",
@@ -86,6 +88,19 @@
       "prettier --write",
       "tslint --fix",
       "git add"
+    ]
+  },
+  "release": {
+    "plugins": [
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "src/**/*.{ts,tsx}"
+          ],
+          "message": "feat(release): release ${nextRelease.version} with updated icons"
+        }
+      ]
     ]
   }
 }
