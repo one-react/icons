@@ -19,7 +19,7 @@
     "coverage": "codecov",
     "getIndex": "node getIndex.js",
     "convert": "svgr src/assets --ext tsx --out-dir src/icons --config-file svgr.config.js",
-    "getIcons": "npm run convert && npm run getIndex"
+    "getIcons": "rimraf src/icons src/index.ts && npm run convert && npm run getIndex"
   },
   "repository": {
     "type": "git",
