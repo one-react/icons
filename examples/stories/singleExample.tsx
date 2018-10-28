@@ -3,9 +3,14 @@ import React, { PureComponent } from 'react'
 
 import { SvgClose } from 'or-icons'
 
-export default class SingleExample extends PureComponent {
+export default class SingleExample extends PureComponent<
+  {},
+  {
+    isVisible: boolean
+  }
+> {
   state = {
-    isOpen: true
+    isVisible: true
   }
 
   render() {
@@ -27,8 +32,9 @@ export default class SingleExample extends PureComponent {
         </div>
         <div>
           <h1>prop #onClick:</h1>
-          {this.state.isOpen && <SvgClose onClick={this.handleClick} />}
-          {!this.state.isOpen && (
+          {this.state.isVisible ? (
+            <SvgClose onClick={this.handleClick} />
+          ) : (
             <Button onClick={this.handleButtonClick}>show svg icon</Button>
           )}
         </div>
@@ -38,13 +44,13 @@ export default class SingleExample extends PureComponent {
 
   handleClick = () => {
     this.setState({
-      isOpen: false
+      isVisible: false
     })
   }
 
   handleButtonClick = () => {
     this.setState({
-      isOpen: true
+      isVisible: true
     })
   }
 }
