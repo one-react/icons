@@ -1,3 +1,4 @@
+import Button from 'or-button'
 import React, { PureComponent } from 'react'
 
 import { SvgClose } from 'or-icons'
@@ -26,7 +27,10 @@ export default class SingleExample extends PureComponent {
         </div>
         <div>
           <h1>prop #onClick:</h1>
-          <SvgClose onClick={this.handleClick} />
+          {this.state.isOpen && <SvgClose onClick={this.handleClick} />}
+          {!this.state.isOpen && (
+            <Button onClick={this.handleButtonClick}>show svg icon</Button>
+          )}
         </div>
       </div>
     )
@@ -35,6 +39,12 @@ export default class SingleExample extends PureComponent {
   handleClick = () => {
     this.setState({
       isOpen: false
+    })
+  }
+
+  handleButtonClick = () => {
+    this.setState({
+      isOpen: true
     })
   }
 }
