@@ -1,8 +1,8 @@
-// Generated from src/assets/close.svg
+// Generated from src/assets/Close.svg
 import React, { PureComponent, SVGProps } from 'react'
 interface Props extends SVGProps<SVGSVGElement> {
-  size?: string | number
-  fill?: string
+  size?: string | number;
+  fill?: string;
 }
 
 const style = {
@@ -21,13 +21,15 @@ export class SvgClose extends PureComponent<Props, {}> {
         fontSize={size || 32}
         fill={fill || 'currentColor'}
         style={style}
-        viewBox="0 0 24 24"
+        viewBox="0 0 516 516"
         width="1em"
         height="1em"
         {...props}
       >
-        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-        <path d="M0 0h24v24H0z" fill="none" />
+        <g fill="#000" stroke="#000" fillRule="evenodd">
+          <path d="M424.4 108.76L108.322 424.837l-13.435-13.435L410.964 95.325z" />
+          <path d="M108.322 95.325L424.4 411.402l-13.435 13.435L94.887 108.76z" />
+        </g>
       </svg>
     )
   }
