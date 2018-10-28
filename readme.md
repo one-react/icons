@@ -22,10 +22,10 @@ yarn add or-icons
 
 ## How it works
 
-- 1. Put your `sample.svg` file in the `src/assets` directory.
-- 2. After excuting the command `npm run convert`, `Sample.tsx` file will be generated in the  src/icons directory.
-- 3. Excute `npm run getIndex`, and all the svg components will be exported.
-- 4. Excute `npm run build`, now you can use your svg components in the `examples` directory and other projects.
+- Put your `sample.svg` file in the `src/assets` directory.
+- After excuting the command `npm run convert`, `Sample.tsx` file will be generated in the  src/icons directory.
+- Excute `npm run getIndex`, and all the svg components will be exported.
+- Excute `npm run build`, now you can use your svg components in the `examples` directory and other projects.
 
 ## Docs
 > powered by [storybook](https://storybook.js.org/)
