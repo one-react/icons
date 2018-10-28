@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="516px" height="516px" viewBox="0 0 516 516" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>FilledClose</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-760.000000, -966.000000)" fill="#000000">
+            <g id="FilledClose" transform="translate(760.000000, 874.000000)">
+                <g id="body" transform="translate(2.000000, 94.000000)">
+                    <path d="M256,487 C127.317653,487 23,382.682347 23,254 C23,125.317653 127.317653,21 256,21 C384.682347,21 489,125.317653 489,254 C489,382.682347 384.682347,487 256,487 Z M271.885822,262 L381.487373,152.398449 L367.345238,138.256313 L257.743687,247.857864 L148.142136,138.256313 L134,152.398449 L243.601551,262 L134,371.601551 L148.142136,385.743687 L257.743687,276.142136 L367.345238,385.743687 L381.487373,371.601551 L271.885822,262 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
