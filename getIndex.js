@@ -26,7 +26,10 @@ async function boot() {
   const text = config.join('\n')
   // read prettier options from local config `.prettierrc`
   const options = await prettier.resolveConfig(path.resolve(__dirname, '.prettierrc'))
-  const formatted = prettier.format(text, options)
+  const formatted = prettier.format(text, {
+    ...options,
+    parser: 'babylon'
+  })
   await writeFileAsync(targetFile, formatted, 'utf-8')
   console.log('export svg content -->', config)
 }
