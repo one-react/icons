@@ -26,9 +26,9 @@ export class SvgClose extends PureComponent<Props, {}> {
         height="1em"
         {...props}
       >
-        <g fill="#000" stroke="#000" fillRule="evenodd">
-          <path d="M424.4 108.76L108.322 424.837l-13.435-13.435L410.964 95.325z" />
-          <path d="M108.322 95.325L424.4 411.402l-13.435 13.435L94.887 108.76z" />
+        <g fillRule="evenodd" stroke="#000">
+          <path d="M428.938 112.294L112.86 428.371l-20.506-20.506L408.432 91.788z" />
+          <path d="M112.856 91.787l316.077 316.076-20.506 20.506L92.35 112.293z" />
         </g>
       </svg>
     )

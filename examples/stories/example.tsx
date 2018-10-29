@@ -14,7 +14,7 @@ export default class Example extends PureComponent<{}, {}> {
             return (
               <div className="icon-item" key={componentName}>
                 {React.createElement(component)}
-                <div className="icon-label">{component.name}</div>
+                <div className="icon-label">{component.displayName}</div>
               </div>
             )
           })}

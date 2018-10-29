@@ -61,7 +61,7 @@ typings/
 lib
 es
 # storybook examples outputs
-.site
+site
 
 package-lock.json
 

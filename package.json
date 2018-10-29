@@ -19,7 +19,8 @@
     "coverage": "codecov",
     "getIndex": "node getIndex.js",
     "convert": "svgr src/assets --ext tsx --out-dir src/icons --config-file svgr.config.js",
-    "getIcons": "rimraf src/icons src/index.ts && npm run convert && npm run getIndex"
+    "removeIcons": "rimraf src/icons src/index.ts",
+    "getIcons": "npm run removeIcons && npm run convert && npm run getIndex"
   },
   "repository": {
     "type": "git",
@@ -79,7 +80,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run type-check && lint-staged",
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },

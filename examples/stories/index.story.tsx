@@ -7,7 +7,6 @@ import Example from './example'
 import SingleExample from './singleExample'
 
 storiesOf('or-icons', module)
-  .add('all icons', () => <Example />)
   .addDecorator(
     withInfo({
       inline: true,
@@ -20,7 +19,12 @@ storiesOf('or-icons', module)
       }
     })
   )
-
+  .add('all icons', () => <Example />, {
+    info: {
+      source: false,
+      text: null
+    }
+  })
   .add('sigle icon', () => <SingleExample />, {
     info: {
       source: false,
