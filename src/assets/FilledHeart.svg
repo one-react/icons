@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>FilledHeart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-113.000000, -1754.000000)" fill="#000000" stroke="#000000">
+            <g id="FilledHeart" transform="translate(103.000000, 1675.000000)">
+                <g id="body">
+                    <g id="Glyph">
+                        <g id="heart">
+                            <path d="M328.143796,453.611564 L78.1437961,453.611564 L78.1437961,203.611564 C78.1437961,134.57597 134.108202,78.6115637 203.143796,78.6115637 C272.17939,78.6115637 328.143796,134.57597 328.143796,203.611564 C397.17939,203.611564 453.143796,259.57597 453.143796,328.611564 C453.143796,397.647157 397.17939,453.611564 328.143796,453.611564 Z" id="Combined-Shape" transform="translate(265.643796, 266.111564) rotate(-45.000000) translate(-265.643796, -266.111564) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
