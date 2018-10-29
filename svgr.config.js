@@ -28,7 +28,6 @@ export class ${state.componentName} extends PureComponent<Props, {}> {
 module.exports = {
   icon: true,
   expandProps: 'end',
-  ext: 'tsx',
   outDir: 'src/icons',
   template,
   svgProps: {
