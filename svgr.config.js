@@ -27,13 +27,13 @@ export class ${state.componentName} extends PureComponent<Props, {}> {
 
 module.exports = {
   icon: true,
-  expandProps: 'end',
-  outDir: 'src/icons',
+  expandProps: 'start',
   template,
   svgProps: {
     preserveAspectRatio: `xMidYMid meet`,
     fontSize: `{size || 32}`,
     fill: `{fill || 'currentColor'}`,
     style: '{style}'
-  }
+  },
+  svgoConfig: require('./svgo.json')
 }
