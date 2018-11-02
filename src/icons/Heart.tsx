@@ -1,4 +1,4 @@
-// Generated from src/assets/BorderedClose.svg
+// Generated from src/assets/Heart.svg
 import React, { PureComponent, SVGProps } from 'react'
 interface Props extends SVGProps<SVGSVGElement> {
   size?: string | number
@@ -11,7 +11,7 @@ const style = {
   cursor: 'pointer'
 }
 
-export class SvgBorderedClose extends PureComponent<Props, {}> {
+export class SvgHeart extends PureComponent<Props, {}> {
   render() {
     const props = this.props
     const { size, fill } = props
@@ -26,9 +26,7 @@ export class SvgBorderedClose extends PureComponent<Props, {}> {
         width="1em"
         height="1em"
       >
-        <path d="M256 448c106.591 0 193-86.409 193-193S362.591 62 256 62 63 148.409 63 255s86.409 193 193 193zm0 31c-123.16 0-223-99.84-223-223S132.84 33 256 33s223 99.84 223 223-99.84 223-223 223z" />
-        <path d="M382.316 149.934L149.677 382.572l-20.506-20.506L361.81 129.428z" />
-        <path d="M149.678 129.428l232.638 232.638-20.506 20.506-232.638-232.638z" />
+        <path d="M254.644 452.063l166.17-166.17c42.958-42.957 42.958-112.606 0-155.563-42.958-42.958-112.606-42.958-155.564 0l-10.606 10.606-10.607-10.606c-42.957-42.958-112.606-42.958-155.563 0-42.958 42.957-42.958 112.606 0 155.563l166.17 166.17zm187.383-342.946c54.673 54.673 54.673 143.316 0 197.99L254.644 494.49 67.26 307.107c-54.673-54.674-54.673-143.317 0-197.99 51.265-51.265 132.395-54.461 187.384-9.59 54.989-44.871 136.119-41.675 187.383 9.59z" />
       </svg>
     )
   }

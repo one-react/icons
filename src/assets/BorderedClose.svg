@@ -4,13 +4,13 @@
     <title>BorderedClose</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Icons" transform="translate(-1412.000000, -968.000000)" stroke="#000000">
-            <g id="BorderedClose" transform="translate(1412.000000, 874.000000)">
-                <g id="body" transform="translate(0.000000, 94.000000)">
-                    <g id="Annulus" transform="translate(23.000000, 22.000000)" stroke-width="30">
-                        <circle id="Oval" cx="233" cy="233" r="223"></circle>
+        <g id="Icons" transform="translate(-1550.000000, -965.000000)" fill="#000000">
+            <g id="BorderedClose" transform="translate(1550.000000, 965.000000)">
+                <g id="body">
+                    <g id="Annulus" transform="translate(23.000000, 22.000000)" fill-rule="nonzero">
+                        <path d="M233,426 C339.590957,426 426,339.590957 426,233 C426,126.409043 339.590957,40 233,40 C126.409043,40 40,126.409043 40,233 C40,339.590957 126.409043,426 233,426 Z M233,457 C109.840501,457 10,357.159499 10,234 C10,110.840501 109.840501,11 233,11 C356.159499,11 456,110.840501 456,234 C456,357.159499 356.159499,457 233,457 Z" id="Oval"></path>
                     </g>
-                    <g id="Glyph" transform="translate(128.000000, 128.000000)" fill="#000000">
+                    <g id="Glyph" transform="translate(128.000000, 128.000000)" stroke="#000000">
                         <rect id="Rectangle" transform="translate(127.743687, 128.000000) rotate(135.000000) translate(-127.743687, -128.000000) " x="-36.7563133" y="113.5" width="329" height="29"></rect>
                         <rect id="Rectangle" transform="translate(127.743687, 128.000000) rotate(45.000000) translate(-127.743687, -128.000000) " x="-36.7563133" y="113.5" width="329" height="29"></rect>
                     </g>
