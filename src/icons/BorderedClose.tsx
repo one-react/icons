@@ -1,7 +1,10 @@
 // Generated from src/assets/BorderedClose.svg
 import React, { PureComponent, SVGProps } from 'react'
+
 interface Props extends SVGProps<SVGSVGElement> {
+  // prettier-ignore
   size?: string | number;
+  // prettier-ignore
   fill?: string;
 }
 
@@ -17,6 +20,7 @@ export class SvgBorderedClose extends PureComponent<Props, {}> {
     const { size, fill } = props
     return (
       <svg
+        {...props}
         preserveAspectRatio="xMidYMid meet"
         fontSize={size || 32}
         fill={fill || 'currentColor'}
@@ -24,21 +28,10 @@ export class SvgBorderedClose extends PureComponent<Props, {}> {
         viewBox="0 0 512 512"
         width="1em"
         height="1em"
-        {...props}
       >
-        <g fill="none" fillRule="evenodd" stroke="#000">
-          <circle
-            cx={233}
-            cy={233}
-            r={223}
-            strokeWidth={30}
-            transform="translate(23 22)"
-          />
-          <g fill="#000">
-            <path d="M382.318 149.931L149.68 382.57l-20.506-20.507 232.638-232.638z" />
-            <path d="M149.675 129.425l232.638 232.638-20.506 20.507L129.17 149.93z" />
-          </g>
-        </g>
+        <path d="M256 448c106.591 0 193-86.409 193-193S362.591 62 256 62 63 148.409 63 255s86.409 193 193 193zm0 31c-123.16 0-223-99.84-223-223S132.84 33 256 33s223 99.84 223 223-99.84 223-223 223z" />
+        <path d="M382.316 149.934L149.677 382.572l-20.506-20.506L361.81 129.428z" />
+        <path d="M149.678 129.428l232.638 232.638-20.506 20.506-232.638-232.638z" />
       </svg>
     )
   }

@@ -1,9 +1,12 @@
 const template = (code, options, state) => {
   return `
 // Generated from ${state.filePath}
-import React, { PureComponent, SVGProps } from 'react';
+import React, { PureComponent, SVGProps } from 'react'
+
 interface Props extends SVGProps<SVGSVGElement> {
+  // prettier-ignore
   size?: string | number;
+  // prettier-ignore
   fill?: string;
 }
 
@@ -27,13 +30,13 @@ export class ${state.componentName} extends PureComponent<Props, {}> {
 
 module.exports = {
   icon: true,
-  expandProps: 'end',
-  outDir: 'src/icons',
+  expandProps: 'start',
   template,
   svgProps: {
     preserveAspectRatio: `xMidYMid meet`,
     fontSize: `{size || 32}`,
     fill: `{fill || 'currentColor'}`,
     style: '{style}'
-  }
+  },
+  svgoConfig: require('./svgo.json')
 }

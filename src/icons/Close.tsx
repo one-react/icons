@@ -1,7 +1,10 @@
 // Generated from src/assets/Close.svg
 import React, { PureComponent, SVGProps } from 'react'
+
 interface Props extends SVGProps<SVGSVGElement> {
+  // prettier-ignore
   size?: string | number;
+  // prettier-ignore
   fill?: string;
 }
 
@@ -17,19 +20,17 @@ export class SvgClose extends PureComponent<Props, {}> {
     const { size, fill } = props
     return (
       <svg
+        {...props}
         preserveAspectRatio="xMidYMid meet"
         fontSize={size || 32}
         fill={fill || 'currentColor'}
         style={style}
-        viewBox="0 0 516 516"
+        viewBox="0 0 512 512"
         width="1em"
         height="1em"
-        {...props}
       >
-        <g fillRule="evenodd" stroke="#000">
-          <path d="M428.938 112.294L112.86 428.371l-20.506-20.506L408.432 91.788z" />
-          <path d="M112.856 91.787l316.077 316.076-20.506 20.506L92.35 112.293z" />
-        </g>
+        <path d="M424.935 108.296L108.858 424.373l-20.506-20.507L404.43 87.79z" />
+        <path d="M108.858 87.79l316.077 316.076-20.507 20.506L88.352 108.296z" />
       </svg>
     )
   }
