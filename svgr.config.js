@@ -1,9 +1,12 @@
 const template = (code, options, state) => {
   return `
 // Generated from ${state.filePath}
-import React, { PureComponent, SVGProps } from 'react';
+import React, { PureComponent, SVGProps } from 'react'
+
 interface Props extends SVGProps<SVGSVGElement> {
+  // prettier-ignore
   size?: string | number;
+  // prettier-ignore
   fill?: string;
 }
 

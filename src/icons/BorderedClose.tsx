@@ -1,8 +1,11 @@
 // Generated from src/assets/BorderedClose.svg
 import React, { PureComponent, SVGProps } from 'react'
+
 interface Props extends SVGProps<SVGSVGElement> {
-  size?: string | number
-  fill?: string
+  // prettier-ignore
+  size?: string | number;
+  // prettier-ignore
+  fill?: string;
 }
 
 const style = {

@@ -1,7 +1,10 @@
 // Generated from src/assets/Heart.svg
 import React, { PureComponent, SVGProps } from 'react'
+
 interface Props extends SVGProps<SVGSVGElement> {
+  // prettier-ignore
   size?: string | number;
+  // prettier-ignore
   fill?: string;
 }
 
