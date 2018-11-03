@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>FilledCheck</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-779.000000, -2485.000000)" fill="#000000">
+            <g id="FilledCheck" transform="translate(779.000000, 2485.000000)">
+                <g id="body">
+                    <g id="Glyph" transform="translate(23.000000, 22.933723)">
+                        <path d="M233,465.021442 C104.317653,465.021442 0,360.927647 0,232.521442 C0,104.115238 104.317653,0.0214424951 233,0.0214424951 C361.682347,0.0214424951 466,104.115238 466,232.521442 C466,360.927647 361.682347,465.021442 233,465.021442 Z M194.446156,310.221643 L95.556779,211.332266 L74.3435756,232.54547 L173.338525,331.540419 L194.446156,352.64805 L399.507122,147.587084 L378.293919,126.37388 L194.446156,310.221643 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
