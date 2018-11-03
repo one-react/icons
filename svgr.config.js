@@ -1,3 +1,5 @@
+// https://gist.github.com/TrySound/d91557ff70e9a11318930a15a4394ea4
+
 const template = (code, options, state) => {
   return `
 // Generated from ${state.filePath}
@@ -25,8 +27,6 @@ export class ${state.componentName} extends PureComponent<Props, {}> {
 }
   `
 }
-
-// https://gist.github.com/TrySound/d91557ff70e9a11318930a15a4394ea4
 
 module.exports = {
   icon: true,
