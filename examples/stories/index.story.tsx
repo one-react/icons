@@ -25,7 +25,7 @@ storiesOf('or-icons', module)
       text: null
     }
   })
-  .add('sigle icon', () => <SingleExample />, {
+  .add('single icon', () => <SingleExample />, {
     info: {
       source: false,
       text: previewCode(require('!!raw-loader!./singleExample.tsx'))
