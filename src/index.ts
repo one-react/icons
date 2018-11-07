@@ -1,5 +1,7 @@
 export { SvgBorderedClose } from './icons/BorderedClose'
+export { SvgCheck } from './icons/Check'
 export { SvgClose } from './icons/Close'
+export { SvgFilledCheck } from './icons/FilledCheck'
 export { SvgFilledClose } from './icons/FilledClose'
 export { SvgFilledHeart } from './icons/FilledHeart'
 export { SvgHeart } from './icons/Heart'

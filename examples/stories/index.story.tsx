@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 import { previewCode } from './util'
 
+import { SvgFilledHeart } from 'or-icons'
 import Example from './example'
 import SingleExample from './singleExample'
 
@@ -10,7 +11,8 @@ storiesOf('or-icons', module)
   .addDecorator(
     withInfo({
       inline: true,
-      propTablesExclude: [Example],
+      propTables: [SvgFilledHeart],
+      propTablesExclude: [Example, SingleExample],
       styles: {
         jsxInfoContent: {
           borderTop: 'none',

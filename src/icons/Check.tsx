@@ -1,4 +1,4 @@
-// Generated from src/assets/FilledClose.svg
+// Generated from src/assets/Check.svg
 import React, { PureComponent, SVGProps } from 'react'
 
 interface Props {
@@ -28,7 +28,7 @@ const style = {
   cursor: 'pointer'
 }
 
-export class SvgFilledClose extends PureComponent<Props, {}> {
+export class SvgCheck extends PureComponent<Props, {}> {
   render() {
     const props = this.props
     const { size, fill } = props
@@ -43,7 +43,7 @@ export class SvgFilledClose extends PureComponent<Props, {}> {
         width="1em"
         height="1em"
       >
-        <path d="M257.806 486.822c-127.578 0-231-103.423-231-231 0-127.578 103.422-231 231-231s231 103.422 231 231c0 127.577-103.422 231-231 231zm20.988-230.806l105.244-105.244-21.049-21.05-105.243 105.245-105.244-105.244-21.049 21.049 105.244 105.244-105.244 105.243 21.049 21.05 105.244-105.245 105.243 105.244 21.05-21.049-105.245-105.243z" />
+        <path d="M222.399 344.222l197.43-197.43 21.213 21.213L222.46 386.589l-21.11-21.109L88.214 252.344l21.153-21.153L222.4 344.222z" />
       </svg>
     )
   }

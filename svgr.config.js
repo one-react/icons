@@ -5,11 +5,25 @@ const template = (code, options, state) => {
 // Generated from ${state.filePath}
 import React, { PureComponent, SVGProps } from 'react'
 
-interface Props extends SVGProps<SVGSVGElement> {
-  // prettier-ignore
-  size?: string | number;
-  // prettier-ignore
-  fill?: string;
+interface Props {
+  /**
+  * additional classname
+  */
+ className?: string;
+ /**
+  * size of the svg icon
+  */
+ // prettier-ignore
+ size?: string | number;
+ /**
+  * color of the svg icon
+  */
+ // prettier-ignore
+ fill?: string;
+ /**
+  * onClick event
+  */
+ onClick?: React.MouseEventHandler<SVGSVGElement>;
 }
 
 const style = {
