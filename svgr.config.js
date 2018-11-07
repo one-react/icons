@@ -3,12 +3,13 @@
 const template = (code, options, state) => {
   return `
 // Generated from ${state.filePath}
-import React, { PureComponent, SVGProps } from 'react'
+import React, { PureComponent } from 'react'
 
 interface Props {
   /**
   * additional classname
   */
+ // prettier-ignore
  className?: string;
  /**
   * size of the svg icon
@@ -23,6 +24,7 @@ interface Props {
  /**
   * onClick event
   */
+ // prettier-ignore
  onClick?: React.MouseEventHandler<SVGSVGElement>;
 }
 
