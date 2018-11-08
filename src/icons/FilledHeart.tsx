@@ -1,11 +1,27 @@
 // Generated from src/assets/FilledHeart.svg
-import React, { PureComponent, SVGProps } from 'react'
+import React, { PureComponent } from 'react'
 
-interface Props extends SVGProps<SVGSVGElement> {
+interface Props {
+  /**
+   * additional classname
+   */
+  // prettier-ignore
+  className?: string;
+  /**
+   * size of the svg icon
+   */
   // prettier-ignore
   size?: string | number;
+  /**
+   * color of the svg icon
+   */
   // prettier-ignore
   fill?: string;
+  /**
+   * onClick event
+   */
+  // prettier-ignore
+  onClick?: React.MouseEventHandler<SVGSVGElement>;
 }
 
 const style = {

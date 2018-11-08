@@ -1,4 +1,4 @@
-// Generated from src/assets/BorderedClose.svg
+// Generated from src/assets/Check.svg
 import React, { PureComponent } from 'react'
 
 interface Props {
@@ -30,7 +30,7 @@ const style = {
   cursor: 'pointer'
 }
 
-export class SvgBorderedClose extends PureComponent<Props, {}> {
+export class SvgCheck extends PureComponent<Props, {}> {
   render() {
     const props = this.props
     const { size, fill } = props
@@ -45,9 +45,7 @@ export class SvgBorderedClose extends PureComponent<Props, {}> {
         width="1em"
         height="1em"
       >
-        <path d="M256 448c106.591 0 193-86.409 193-193S362.591 62 256 62 63 148.409 63 255s86.409 193 193 193zm0 31c-123.16 0-223-99.84-223-223S132.84 33 256 33s223 99.84 223 223-99.84 223-223 223z" />
-        <path d="M382.316 149.934L149.677 382.572l-20.506-20.506L361.81 129.428z" />
-        <path d="M149.678 129.428l232.638 232.638-20.506 20.506-232.638-232.638z" />
+        <path d="M222.399 344.222l197.43-197.43 21.213 21.213L222.46 386.589l-21.11-21.109L88.214 252.344l21.153-21.153L222.4 344.222z" />
       </svg>
     )
   }
