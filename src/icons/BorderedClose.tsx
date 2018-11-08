@@ -1,11 +1,12 @@
 // Generated from src/assets/BorderedClose.svg
-import React, { PureComponent, SVGProps } from 'react'
+import React, { PureComponent } from 'react'
 
 interface Props {
   /**
    * additional classname
    */
-  className?: string
+  // prettier-ignore
+  className?: string;
   /**
    * size of the svg icon
    */
@@ -19,7 +20,8 @@ interface Props {
   /**
    * onClick event
    */
-  onClick?: React.MouseEventHandler<SVGSVGElement>
+  // prettier-ignore
+  onClick?: React.MouseEventHandler<SVGSVGElement>;
 }
 
 const style = {
