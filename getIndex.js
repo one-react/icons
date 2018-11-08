@@ -15,7 +15,7 @@ async function readConfig() {
 
   for (const filename of filenames) {
     const basename = path.basename(filename, '.tsx')
-    result.push(`export { Svg${basename} } from \'./icons/${basename}\'`)
+    result.push(`export { Svg${basename} } from './icons/${basename}'`)
   }
 
   return result

@@ -1,13 +1,31 @@
+// https://gist.github.com/TrySound/d91557ff70e9a11318930a15a4394ea4
+
 const template = (code, options, state) => {
   return `
 // Generated from ${state.filePath}
-import React, { PureComponent, SVGProps } from 'react'
+import React, { PureComponent } from 'react'
 
-interface Props extends SVGProps<SVGSVGElement> {
-  // prettier-ignore
-  size?: string | number;
-  // prettier-ignore
-  fill?: string;
+interface Props {
+  /**
+  * additional classname
+  */
+ // prettier-ignore
+ className?: string;
+ /**
+  * size of the svg icon
+  */
+ // prettier-ignore
+ size?: string | number;
+ /**
+  * color of the svg icon
+  */
+ // prettier-ignore
+ fill?: string;
+ /**
+  * onClick event
+  */
+ // prettier-ignore
+ onClick?: React.MouseEventHandler<SVGSVGElement>;
 }
 
 const style = {
@@ -25,8 +43,6 @@ export class ${state.componentName} extends PureComponent<Props, {}> {
 }
   `
 }
-
-// https://gist.github.com/TrySound/d91557ff70e9a11318930a15a4394ea4
 
 module.exports = {
   icon: true,
