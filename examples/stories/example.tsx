@@ -9,11 +9,12 @@ export default class Example extends PureComponent<{}, {}> {
   timeoutId: NodeJS.Timer
 
   state = {
-    copied: false
+    copied: false,
+    name: ''
   }
 
   render() {
-    const { copied } = this.state
+    const { copied, name } = this.state
     return (
       <div>
         <div
@@ -21,11 +22,17 @@ export default class Example extends PureComponent<{}, {}> {
             copied
           })}
         >
-          {copied ? <span>✅Copied! 🤪</span> : <span>😜 </span>}
-          <span>
+          <div>
             When you click on the icon, the name of the icon component will be
             copied to your clipboard.
-          </span>
+          </div>
+          <div>
+            {copied ? (
+              <span>✅ {name} Copied! 🤪</span>
+            ) : (
+              <span>Try to click and copy 😜 </span>
+            )}
+          </div>
         </div>
         <div className="icon-example">
           {Object.keys(Icons)
@@ -33,7 +40,10 @@ export default class Example extends PureComponent<{}, {}> {
             .map(componentName => {
               const component = Icons[componentName]
               return (
-                <CopyToClipboard text={componentName} onCopy={this.handleCopy}>
+                <CopyToClipboard
+                  text={componentName}
+                  onCopy={this.handleCopy(componentName)}
+                >
                   <div className="icon-item" key={componentName}>
                     {React.createElement(component)}
                     <div className="icon-label">{component.displayName}</div>
@@ -46,20 +56,23 @@ export default class Example extends PureComponent<{}, {}> {
     )
   }
 
-  handleCopy = () => {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId)
-    }
-
-    this.setState(
-      {
-        copied: true
-      },
-      () => {
-        this.timeoutId = setTimeout(() => {
-          this.setState({ copied: false })
-        }, 2000)
+  handleCopy = componentName => {
+    return () => {
+      if (this.timeoutId) {
+        clearTimeout(this.timeoutId)
       }
-    )
+
+      this.setState(
+        {
+          copied: true,
+          name: componentName
+        },
+        () => {
+          this.timeoutId = setTimeout(() => {
+            this.setState({ copied: false, name: '' })
+          }, 2000)
+        }
+      )
+    }
   }
 }
