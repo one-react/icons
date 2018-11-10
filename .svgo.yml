@@ -1,0 +1,15 @@
+---
+multipass: true
+plugins:
+- removeDimensions: true
+- removeAttrs:
+    attrs:
+    - fill
+    - stroke
+    - fill-rule
+- removeViewBox: false
+- removeUselessStrokeAndFill: true
+- removeEmptyAttrs: false
+js2svg:
+  pretty: true
+  indent: "  "

@@ -53,6 +53,5 @@ module.exports = {
     fontSize: `{size || 32}`,
     fill: `{fill || 'currentColor'}`,
     style: '{style}'
-  },
-  svgoConfig: require('./svgo.json')
+  }
 }
