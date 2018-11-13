@@ -76,7 +76,7 @@
     "or-theme": "^1.2.0"
   },
   "peerDependencies": {
-    "react": ">=15.5"
+    "react": ">=16.6.2"
   },
   "husky": {
     "hooks": {
