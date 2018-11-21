@@ -72,8 +72,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
-    "classnames": "^2.2.6",
-    "or-theme": "^1.2.0"
+    "classnames": "^2.2.6"
   },
   "peerDependencies": {
     "react": ">=15.5"
