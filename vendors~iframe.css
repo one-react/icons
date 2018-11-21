@@ -1,0 +1,190 @@
+.or-code-previewer {
+  position: relative; }
+  .or-code-previewer-title {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eeeeee; }
+  .or-code-previewer .copy-btn {
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 13px;
+    align-self: flex-start;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eeeeee;
+    -o-border-image: none;
+       border-image: none;
+    -o-border-image: initial;
+       border-image: initial;
+    border-radius: 3px;
+    padding: 3px 10px; }
+    .or-code-previewer .copy-btn-text {
+      height: 16px;
+      -webkit-transform: translateY(-100%) translateY(-6px);
+              transform: translateY(-100%) translateY(-6px);
+      transition: -webkit-transform .2s ease;
+      transition: transform .2s ease;
+      transition: transform .2s ease, -webkit-transform .2s ease; }
+    .or-code-previewer .copy-btn-copied {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
+
+/*
+
+Atom One Light by Daniel Gamage
+Original One Light Syntax theme from https://github.com/atom/one-light-syntax
+
+base:    #fafafa
+mono-1:  #383a42
+mono-2:  #686b77
+mono-3:  #a0a1a7
+hue-1:   #0184bb
+hue-2:   #4078f2
+hue-3:   #a626a4
+hue-4:   #50a14f
+hue-5:   #e45649
+hue-5-2: #c91243
+hue-6:   #986801
+hue-6-2: #c18401
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #383a42;
+  background: #fafafa;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #a0a1a7;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #a626a4;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e45649;
+}
+
+.hljs-literal {
+  color: #0184bb;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+  color: #50a14f;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #c18401;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #986801;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #4078f2;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+.or-btn {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer; }
+  .or-btn.or-btn-disabled {
+    background-color: #BDBDBD;
+    border-color: #BDBDBD;
+    color: white; }
+    .or-btn.or-btn-disabled:hover {
+      cursor: not-allowed;
+      background-color: #BDBDBD;
+      border-color: #BDBDBD; }
+
+.or-btn-default {
+  background-color: white;
+  color: #212121;
+  border-color: #212121; }
+  .or-btn-default:hover {
+    background-color: #212121;
+    color: white; }
+
+.or-btn-primary {
+  background-color: #212121;
+  color: white;
+  border-color: #212121; }
+  .or-btn-primary:hover {
+    background-color: #333;
+    border-color: #333; }
+
+.or-btn-warning {
+  background-color: #F44336;
+  color: white;
+  border-color: #F44336; }
+  .or-btn-warning:hover {
+    background-color: #F16459;
+    border-color: #F16459; }
+
+.or-btn-size-default {
+  min-width: 120px;
+  padding: 10px 30px; }
+
+.or-btn-size-large {
+  min-width: 300px;
+  padding: 12px 40px;
+  font-size: larger; }
+
+.or-btn-size-small {
+  min-width: 100px;
+  padding: 5px 10px; }
+
+
+/*# sourceMappingURL=vendors~iframe.css.map*/
