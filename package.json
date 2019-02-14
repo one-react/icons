@@ -75,7 +75,7 @@
     "classnames": "^2.2.6"
   },
   "peerDependencies": {
-    "react": ">=15.5"
+    "react": ">=16.8.2"
   },
   "husky": {
     "hooks": {
