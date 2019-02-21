@@ -61,7 +61,7 @@
     "prettier": "^1.14.2",
     "raf": "^3.4.0",
     "react": "^16.8.3",
-    "react-dom": "^16.1.1",
+    "react-dom": "^16.8.3",
     "regenerator-runtime": "^0.13.0",
     "rimraf": "^2.6.2",
     "semantic-release": "^15.10.6",
