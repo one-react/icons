@@ -55,7 +55,7 @@
     "codecov": "^3.1.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.1.0",
-    "husky": "^1.0.0-rc.14",
+    "husky": "^2.3.0",
     "jest": "^23.6.0",
     "lint-staged": "^8.0.4",
     "prettier": "^1.14.2",
