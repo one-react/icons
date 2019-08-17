@@ -57,7 +57,7 @@
     "enzyme-adapter-react-16": "^1.1.0",
     "husky": "^1.0.0-rc.14",
     "jest": "^23.6.0",
-    "lint-staged": "^8.0.4",
+    "lint-staged": "^9.2.2",
     "prettier": "^1.14.2",
     "raf": "^3.4.0",
     "react": "^16.1.1",
