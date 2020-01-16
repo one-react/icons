@@ -14,7 +14,7 @@
     "@babel/core": "^7.1.2",
     "@storybook/addon-actions": "^5.3.5",
     "@storybook/addon-info": "^5.3.5",
-    "@storybook/addon-options": "^4.0.2",
+    "@storybook/addon-options": "^5.3.5",
     "@storybook/react": "^4.0.2",
     "@types/storybook__addon-actions": "^3.4.1",
     "@types/storybook__addon-info": "^3.4.2",
