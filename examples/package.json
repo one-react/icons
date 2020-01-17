@@ -18,7 +18,7 @@
     "@storybook/react": "^4.0.2",
     "@types/storybook__addon-actions": "^3.4.1",
     "@types/storybook__addon-info": "^3.4.2",
-    "@types/storybook__react": "^3.0.9",
+    "@types/storybook__react": "^5.2.1",
     "babel-loader": "^8.0.2",
     "node-sass": "^4.9.4",
     "or-code-previewer": "^1.0.0",
