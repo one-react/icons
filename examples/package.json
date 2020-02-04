@@ -13,7 +13,7 @@
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@storybook/addon-actions": "^5.3.12",
-    "@storybook/addon-info": "^4.0.2",
+    "@storybook/addon-info": "^5.3.12",
     "@storybook/addon-options": "^4.0.2",
     "@storybook/react": "^4.0.2",
     "@types/storybook__addon-actions": "^3.4.1",
