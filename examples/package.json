@@ -15,7 +15,7 @@
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-info": "^5.3.18",
     "@storybook/addon-options": "^5.3.18",
-    "@storybook/react": "^4.0.2",
+    "@storybook/react": "^5.3.18",
     "@types/storybook__addon-actions": "^3.4.1",
     "@types/storybook__addon-info": "^3.4.2",
     "@types/storybook__react": "^3.0.9",
