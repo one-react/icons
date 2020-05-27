@@ -34,7 +34,7 @@
   "homepage": "https://github.com/one-react/icons#readme",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.1.2",
+    "@babel/core": "^7.10.1",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/plugin-transform-modules-commonjs": "^7.1.0",
